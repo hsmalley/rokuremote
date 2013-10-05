@@ -38,7 +38,7 @@ class Table:
         button.show()
 
         button = gtk.Button("BACK")
-        button.connect("clicked", self.callback, "press back")
+        button.connect("clicked", self.callback, "press k")
         table.attach(button, 0, 1, 0, 2)
         button.show()
 
