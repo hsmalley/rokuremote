@@ -2,7 +2,7 @@
 Name=RokuRemote
 Comment=Runs the roku remote
 Exec=python /opt/roku/remote.py
-Icon=/usr/share/icons/gnome/scalable/categories/applications-multimedia-symbolic.svg
+Icon=/opt/roku/black_logo_png.png
 Terminal=false
 Type=Application
 StartupNotify=true
