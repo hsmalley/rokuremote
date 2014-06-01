@@ -5,21 +5,17 @@ import telnetlib
 import pygtk
 pygtk.require('2.0')
 
-
 class Table:
 
-
     def callback(self, widget, data):
-	tn=telnetlib.Telnet("192.168.1.180",8080)  
+	tn=telnetlib.Telnet("192.168.0.181",8080)
 	print tn.read_until(">")
 	tn.write(data + "\n")
 	tn.close()
 
-
     def delete_event(self, widget, event, data=None):
         gtk.main_quit()
         return False
-
 
     def __init__(self):
         self.window = gtk.Window(gtk.WINDOW_TOPLEVEL)
@@ -98,7 +94,7 @@ class Table:
 
 def main():
     gtk.main()
-    return 0       
+    return 0
 
 if __name__ == "__main__":
     Table()

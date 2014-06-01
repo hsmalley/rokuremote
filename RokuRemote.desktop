@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=RokuRemote
 Comment=Runs the roku remote
-Exec=python /opt/roku/remote.py
+Exec=python2 /opt/roku/remote.py
 Icon=/opt/roku/black_logo_png.png
 Terminal=false
 Type=Application
